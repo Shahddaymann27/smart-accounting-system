@@ -94,7 +94,7 @@ export default function Accounting() {
       <Animated.View style={[styles.specialSection, useFadeIn(750, 400).style as any]}>
         <TouchableOpacity style={styles.specialBox} activeOpacity={0.85} onPress={() => navigate('/login')}>
           <View style={styles.specialBadge}>
-            <MaterialIcons name="local-offer" size={16} color="#fff" />
+            <MaterialIcons name="local-offer" size={16} color="#e7cacaff" />
             <Text style={styles.specialBadgeText}>STARTUP SPECIAL</Text>
           </View>
           <Text style={styles.specialTitle}>€400/month</Text>

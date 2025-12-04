@@ -5,12 +5,12 @@ import { useFadeIn } from '../../ui/animations';
 import { Colors, Fonts } from '../../ui/theme';
 
 const DOCUMENTS = [
-  { id: 1, name: 'Dichiarazione_Fiscale_2024.pdf', type: 'PDF', category: 'Tax', date: '28/11/2024', size: '2.4 MB' },
-  { id: 2, name: 'Fattura_1045.pdf', type: 'PDF', category: 'Invoice', date: '25/11/2024', size: '456 KB' },
-  { id: 3, name: 'Contratto_Cliente.docx', type: 'DOCX', category: 'Contract', date: '20/11/2024', size: '890 KB' },
-  { id: 4, name: 'Report_Mensile_Nov.xlsx', type: 'XLSX', category: 'Report', date: '18/11/2024', size: '1.2 MB' },
-  { id: 5, name: 'Bilancio_Q4.pdf', type: 'PDF', category: 'Financial', date: '15/11/2024', size: '3.1 MB' },
-  { id: 6, name: 'Ricevuta_Pagamento.pdf', type: 'PDF', category: 'Receipt', date: '12/11/2024', size: '234 KB' },
+  { id: 1, name: 'Tax_Declaration_2024.pdf', type: 'PDF', category: 'Tax', date: '28/11/2024', size: '2.4 MB' },
+  { id: 2, name: 'Invoice_1045.pdf', type: 'PDF', category: 'Invoice', date: '25/11/2024', size: '456 KB' },
+  { id: 3, name: 'Contract_Client.docx', type: 'DOCX', category: 'Contract', date: '20/11/2024', size: '890 KB' },
+  { id: 4, name: 'Report_Mohamed_Nov.xlsx', type: 'XLSX', category: 'Report', date: '18/11/2024', size: '1.2 MB' },
+  { id: 5, name: 'Q4_Balance_Sheet.pdf', type: 'PDF', category: 'Financial', date: '15/11/2024', size: '3.1 MB' },
+  { id: 6, name: 'Payment_Receipt.pdf', type: 'PDF', category: 'Receipt', date: '12/11/2024', size: '234 KB' },
 ];
 
 export default function Documents() {
