@@ -94,10 +94,10 @@ export default function HomeScreen() {
           <View style={styles.divider} />
           <View style={styles.teamGrid}>
             {[
-              { icon: 'account-tie', name: 'Marco Rossi', role: 'Tax Consultant', specialty: '15+ years experience' },
-              { icon: 'briefcase-account', name: 'Laura Bianchi', role: 'Accounting Manager', specialty: 'Financial Planning' },
-              { icon: 'file-document-edit', name: 'Giovanni Ferrari', role: 'Legal Advisor', specialty: 'Business Registration' },
-              { icon: 'chart-line', name: 'Sofia Romano', role: 'Financial Analyst', specialty: 'Strategic Reports' }
+              { icon: 'account-tie', name: 'Mohamed Ahmed ', role: 'Tax Consultant', specialty: '15+ years experience' },
+              { icon: 'briefcase-account', name: 'Loreen Hassan', role: 'Accounting Manager', specialty: 'Financial Planning' },
+              { icon: 'file-document-edit', name: 'Asharf Mahmoud  ', role: 'Legal Advisor', specialty: 'Business Registration' },
+              { icon: 'chart-line', name: 'Nada Adel', role: 'Financial Analyst', specialty: 'Strategic Reports' }
             ].map((member, idx) => {
               const anim = useFadeIn(500, 220 + idx * 100);
               return (
