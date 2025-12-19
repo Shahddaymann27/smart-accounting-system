@@ -39,6 +39,8 @@ The design supports future extensions such as budgeting, expense categories, and
 
 ---
 ## 📂 Project Architecture
+
+```
 src/
  ├── user/
  │   ├── login.*                 → User authentication
@@ -61,14 +63,36 @@ src/
  │
  └── assets/
      └── Icons, images, and visual resources
+
+```
+
+---
 ---
 ### ⚙️ Installation & Setup
 
 Follow these steps to run the project locally:
 
-Clone the repository:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Shahddaymann27/smart-accounting-system.git
+  
+   ```
 
-git clone https://github.com/Shahddaymann27/smart-accounting-system.git
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Run the application**
+   ```bash
+   npx expo start
+   ```
+
+4. **Access the app**
+   - Scan the QR code with Expo Go (on your mobile), or  
+   - Run on an emulator (`i` for iOS / `a` for Android)
+
+---
 
 
 Open the project in your preferred IDE (e.g., Visual Studio).
@@ -95,3 +119,8 @@ Malak
 
 🎓 Computer Science Students
 📍 Nile University
+## Documentation 
+- `account system.drawio` — Database structure and entity relationships  
+- `.pdf` — Interface wireframe and navigation flow  
+- `.pdf` — System workflow outlining data and process flow  
+---
