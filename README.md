@@ -37,17 +37,8 @@ The ERD defines the relationships among key entities such as:
 Each user can record multiple income and expense entries, and reports summarize financial data to calculate totals and balances.  
 The design supports future extensions such as budgeting, expense categories, and payment methods.
 
-
-
-Technology            Overview
-Layer	             Description
-Frontend	         Desktop-based application
-Application Logic	Handles accounting rules and calculations
-Styling	Standard      UI components for clarity
-Data Layer	         Local file storage / in-memory data
-Future Integration     	Database
 ---
-##📂 Project Architecture
+## 📂 Project Architecture
 src/
  ├── user/
  │   ├── login.*                 → User authentication
