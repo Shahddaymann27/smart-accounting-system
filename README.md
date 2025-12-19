@@ -37,7 +37,6 @@ The ERD defines the relationships among key entities such as:
 Each user can record multiple income and expense entries, and reports summarize financial data to calculate totals and balances.  
 The design supports future extensions such as budgeting, expense categories, and payment methods.
 
-*(See `[accounting sysetm.drawio.pdf](https://github.com/Shahddaymann27/smart-accounting-system/blob/master/account%20system.drawio.png)` for full database schema.)*
 
 ```mermaid
 erDiagram
