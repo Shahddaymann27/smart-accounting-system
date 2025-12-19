@@ -1,10 +1,10 @@
-# 💼 Smart Accounting System
+#  Smart Accounting System
 
 A simple and efficient accounting system designed to help users manage income and expenses, perform automatic calculations, and generate financial summaries with ease.
 
 ---
 
-## 📖 Project Overview
+##  Project Overview
 
 The **Smart Accounting System** is a software application developed to simplify basic accounting tasks.  
 It allows users to record income and expenses, track financial activities, and generate organized reports to support better financial decision-making.
@@ -13,17 +13,17 @@ This project focuses on clarity, accuracy, and structured system design, making 
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
-- 💰 Income and expense tracking  
-- 📊 Financial summaries and reports  
-- 🧮 Automatic balance calculations  
-- 🗂️ Organized financial data management  
-- 🔐 Simple and user-friendly interface  
+- Income and expense tracking  
+- Financial summaries and reports  
+- Automatic balance calculations  
+- Organized financial data management  
+- Simple and user-friendly interface  
 
 ---
 
-## 🧩 System Design
+## System Design
 
 ### Entity-Relationship Diagram (ERD)
 
@@ -38,7 +38,7 @@ Each user can record multiple income and expense entries, and reports summarize 
 The design supports future extensions such as budgeting, expense categories, and payment methods.
 
 ---
-## 📂 Project Architecture
+## Project Architecture
 
 ```
 src/
@@ -68,7 +68,7 @@ src/
 
 ---
 ---
-### ⚙️ Installation & Setup
+### Installation & Setup
 
 Follow these steps to run the project locally:
 
@@ -99,7 +99,7 @@ Open the project in your preferred IDE (e.g., Visual Studio).
 
 Build and run the application.
 ---
-### 🛠️ Technologies Used
+### Technologies Used
 
 Programming Language: Java / C# / Python
 
@@ -107,7 +107,7 @@ IDE: Visual Studio
 
 Version Control: Git & GitHub
 ---
-## 👩‍💻 Developed By
+## Developed By
 
 Menna Adel
 
@@ -117,7 +117,7 @@ Sama
 
 Malak
 
-🎓 Computer Science Students
+🎓Computer Science Students
 📍 Nile University
 ## Documentation 
 - `account system.drawio` — Database structure and entity relationships  
