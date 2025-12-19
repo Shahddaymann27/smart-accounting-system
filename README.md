@@ -25,43 +25,76 @@ This project focuses on clarity, accuracy, and structured system design, making 
 
 ## 🧩 System Design
 
-The system is designed using a **modular architecture** to ensure maintainability and scalability.
+### Entity-Relationship Diagram (ERD)
 
-### 🔹 Main Components:
-- **User Interface Layer**  
-  Handles user input and system interaction.
+The **Entity-Relationship Diagram (ERD)** represents the core data structure of the Smart Accounting System and illustrates how financial data is organized and connected.
 
-- **Business Logic Layer**  
-  Manages accounting operations and calculations.
+The ERD defines the relationships among key entities such as:
+- **Users**
+- **Income**
+- **Expenses**
+- **Financial Reports**
 
-- **Data Management Layer**  
-  Stores and retrieves financial records efficiently.
+Each user can record multiple income and expense entries, forming one-to-many (1:N) relationships.  
+Financial reports summarize income and expense data to calculate totals and balances.
 
-This design ensures separation of concerns and smooth data flow between system components.
+The ERD is designed to ensure data consistency and support future extensions such as budgeting and advanced analytics.
 
 ---
+## Wireframe Design
 
-## ⚙️ Installation & Setup
+The system interface follows a structured wireframe design focused on simplicity and usability.
 
-Follow these steps to run the project locally:
+  Each screen layout was designed to:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Shahddaymann27/smart-accounting-system.git
-  ---
-  ##   🛠️ Technologies Used
+- Reduce navigation time
 
- Programming Language: 
+- Provide clear access to income, expense, and report features
 
-IDE: Visual Studio
-
-Version Control: Git & GitHub
+- Present financial data in an organized and readable format
 ---
-## 👩‍💻 Developed By
-Menna Adel
-Shahd Daymann
-sama
-malak
+ ##  Technology Overview
+ -Layer:	Description
+Frontend:	Desktop-based application
+Application Logic	Handles accounting rules and calculations
+Language:	Java / C# / Python
+Styling	Standard UI components
+Data Layer:	Local file storage / in-memory data
+Future Integration:	Database
+--- 
+###📂 Project Architecture
+src/
+ ├── user/
+ │   ├── login.*                 → User authentication
+ │   ├── profile.*               → User information management
+ │
+ ├── income/
+ │   ├── add-income.*            → Add income records
+ │   ├── view-income.*           → View income history
+ │
+ ├── expense/
+ │   ├── add-expense.*           → Add expense records
+ │   ├── view-expense.*          → View expense history
+ │
+ ├── reports/
+ │   ├── generate-report.*       → Generate financial reports
+ │
+ ├── components/
+ │   ├── Navigation.*            → Application navigation
+ │   ├── Forms.*                 → Shared UI components
+ │
+ └── assets/
+     └── Icons, images, and visual resources
+---
+###👩‍💻 Developed By
 
-🎓 Computer Science Students
-📍 Nile universty
+- Menna Adel
+
+- Shahd Daymann
+
+- Sama
+
+- Malak
+
+-🎓 Computer Science Students
+-📍 Nile Universit
