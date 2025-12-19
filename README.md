@@ -27,42 +27,77 @@ This project focuses on clarity, accuracy, and structured system design, making 
 
 ### Entity-Relationship Diagram (ERD)
 
-The **Entity-Relationship Diagram (ERD)** represents the core data structure of the Smart Accounting System and illustrates how financial data is organized and connected.
-
 The ERD defines the relationships among key entities such as:
-- **Users**
-- **Income**
-- **Expenses**
+
+- **Users**  
+- **Income**  
+- **Expenses**  
 - **Financial Reports**
 
-Each user can record multiple income and expense entries, forming one-to-many (1:N) relationships.  
-Financial reports summarize income and expense data to calculate totals and balances.
+Each user can record multiple income and expense entries, and reports summarize financial data to calculate totals and balances.  
+The design supports future extensions such as budgeting, expense categories, and payment methods.
 
-The ERD is designed to ensure data consistency and support future extensions such as budgeting and advanced analytics.
+*(See `accounting_ERD.drawio.pdf` for full database schema.)*
 
----
-## Wireframe Design
+```mermaid
+erDiagram
+    USER {
+        int user_id PK
+        string name
+        string email
+        string password
+    }
+
+    INCOME {
+        int income_id PK
+        float amount
+        string source
+        date income_date
+        int user_id FK
+    }
+
+    EXPENSE {
+        int expense_id PK
+        float amount
+        string category
+        date expense_date
+        int user_id FK
+    }
+
+    REPORT {
+        int report_id PK
+        float total_income
+        float total_expense
+        float balance
+        int user_id FK
+    }
+
+    USER ||--o{ INCOME : records
+    USER ||--o{ EXPENSE : records
+    USER ||--o{ REPORT : generates
+Wireframe Design
 
 The system interface follows a structured wireframe design focused on simplicity and usability.
 
-  Each screen layout was designed to:
+Each screen layout was designed to:
 
-- Reduce navigation time
+Reduce navigation time
 
-- Provide clear access to income, expense, and report features
+Provide clear access to income, expense, and report features
 
-- Present financial data in an organized and readable format
----
- ##  Technology Overview
- -Layer:	Description
-Frontend:	Desktop-based application
+Present financial data in an organized and readable format
+
+(See accounting_wireframe.pdf for visual layout details.)
+
+Technology Overview
+Layer	Description
+Frontend	Desktop-based application
 Application Logic	Handles accounting rules and calculations
-Language:	Java / C# / Python
-Styling	Standard UI components
-Data Layer:	Local file storage / in-memory data
-Future Integration:	Database
---- 
-###📂 Project Architecture
+Language	Java / C# / Python
+Styling	Standard UI components for clarity
+Data Layer	Local file storage / in-memory data
+Future Integration	Database and advanced analytics
+📂 Project Architecture
 src/
  ├── user/
  │   ├── login.*                 → User authentication
@@ -85,16 +120,37 @@ src/
  │
  └── assets/
      └── Icons, images, and visual resources
----
-###👩‍💻 Developed By
 
-- Menna Adel
+⚙️ Installation & Setup
 
-- Shahd Daymann
+Follow these steps to run the project locally:
 
-- Sama
+Clone the repository:
 
-- Malak
+git clone https://github.com/Shahddaymann27/smart-accounting-system.git
 
--🎓 Computer Science Students
--📍 Nile Universit
+
+Open the project in your preferred IDE (e.g., Visual Studio).
+
+Build and run the application.
+
+🛠️ Technologies Used
+
+Programming Language: Java / C# / Python
+
+IDE: Visual Studio
+
+Version Control: Git & GitHub
+
+👩‍💻 Developed By
+
+Menna Adel
+
+Shahd Daymann
+
+Sama
+
+Malak
+
+🎓 Computer Science Students
+📍 Nile University
