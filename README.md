@@ -37,7 +37,7 @@ The ERD defines the relationships among key entities such as:
 Each user can record multiple income and expense entries, and reports summarize financial data to calculate totals and balances.  
 The design supports future extensions such as budgeting, expense categories, and payment methods.
 
-*(See `accounting_ERD.drawio.pdf` for full database schema.)*
+*(See `accounting sysetm.drawio.pdf` for full database schema.)*
 
 ```mermaid
 erDiagram
@@ -89,14 +89,13 @@ Present financial data in an organized and readable format
 
 (See accounting_wireframe.pdf for visual layout details.)
 
-Technology Overview
-Layer	Description
-Frontend	Desktop-based application
+Technology            Overview
+Layer	             Description
+Frontend	         Desktop-based application
 Application Logic	Handles accounting rules and calculations
-Language	Java / C# / Python
-Styling	Standard UI components for clarity
-Data Layer	Local file storage / in-memory data
-Future Integration	Database and advanced analytics
+Styling	Standard      UI components for clarity
+Data Layer	         Local file storage / in-memory data
+Future Integration     	Database
 📂 Project Architecture
 src/
  ├── user/
