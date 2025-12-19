@@ -48,3 +48,20 @@ Follow these steps to run the project locally:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Shahddaymann27/smart-accounting-system.git
+  ---
+  ##   🛠️ Technologies Used
+
+ Programming Language: 
+
+IDE: Visual Studio
+
+Version Control: Git & GitHub
+---
+## 👩‍💻 Developed By
+Menna Adel
+Shahd Daymann
+sama
+malak
+
+🎓 Computer Science Students
+📍 Nile universty
