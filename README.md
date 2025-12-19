@@ -38,55 +38,6 @@ Each user can record multiple income and expense entries, and reports summarize 
 The design supports future extensions such as budgeting, expense categories, and payment methods.
 
 
-```mermaid
-erDiagram
-    USER {
-        int user_id PK
-        string name
-        string email
-        string password
-    }
-
-    INCOME {
-        int income_id PK
-        float amount
-        string source
-        date income_date
-        int user_id FK
-    }
-
-    EXPENSE {
-        int expense_id PK
-        float amount
-        string category
-        date expense_date
-        int user_id FK
-    }
-
-    REPORT {
-        int report_id PK
-        float total_income
-        float total_expense
-        float balance
-        int user_id FK
-    }
-
-    USER ||--o{ INCOME : records
-    USER ||--o{ EXPENSE : records
-    USER ||--o{ REPORT : generates
-Wireframe Design
-
-The system interface follows a structured wireframe design focused on simplicity and usability.
-
-Each screen layout was designed to:
-
-Reduce navigation time
-
-Provide clear access to income, expense, and report features
-
-Present financial data in an organized and readable format
-
-(See accounting_wireframe.pdf for visual layout details.)
 
 Technology            Overview
 Layer	             Description
@@ -95,7 +46,8 @@ Application Logic	Handles accounting rules and calculations
 Styling	Standard      UI components for clarity
 Data Layer	         Local file storage / in-memory data
 Future Integration     	Database
-📂 Project Architecture
+---
+##📂 Project Architecture
 src/
  ├── user/
  │   ├── login.*                 → User authentication
@@ -118,8 +70,8 @@ src/
  │
  └── assets/
      └── Icons, images, and visual resources
-
-⚙️ Installation & Setup
+---
+### ⚙️ Installation & Setup
 
 Follow these steps to run the project locally:
 
@@ -131,16 +83,16 @@ git clone https://github.com/Shahddaymann27/smart-accounting-system.git
 Open the project in your preferred IDE (e.g., Visual Studio).
 
 Build and run the application.
-
-🛠️ Technologies Used
+---
+### 🛠️ Technologies Used
 
 Programming Language: Java / C# / Python
 
 IDE: Visual Studio
 
 Version Control: Git & GitHub
-
-👩‍💻 Developed By
+---
+## 👩‍💻 Developed By
 
 Menna Adel
 
