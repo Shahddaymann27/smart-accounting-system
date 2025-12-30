@@ -28,34 +28,34 @@ export default function Router() {
   let Screen = null as any;
   switch (route) {
     case 'home':
-      Screen = <HomeScreen navigate={navigate} />;
+      Screen = <HomeScreen />;
       break;
     case 'tax':
-      Screen = <TaxConsulting navigate={navigate} />;
+      Screen = <TaxConsulting />;
       break;
     case 'accounting':
-      Screen = <Accounting navigate={navigate} />;
+      Screen = <Accounting />;
       break;
     case 'registration':
-      Screen = <BusinessRegistration navigate={navigate} />;
+      Screen = <BusinessRegistration />;
       break;
     case 'reporting':
-      Screen = <FinancialReporting navigate={navigate} />;
+      Screen = <FinancialReporting />;
       break;
     case 'contact':
-      Screen = <Contact navigate={navigate} />;
+      Screen = <Contact />;
       break;
     case 'login':
-      Screen = <Login navigate={navigate} />;
+      Screen = <Login />;
       break;
     case 'signup':
-      Screen = <Signup navigate={navigate} />;
+      Screen = <Signup />;
       break;
   }
 
   return (
     <View style={styles.container}>
-      <Header navigate={navigate} />
+      <Header />
       {Screen}
     </View>
   );
