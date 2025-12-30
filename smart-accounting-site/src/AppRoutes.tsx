@@ -12,6 +12,7 @@ import Clients from './screens/Clients';
 import Contact from './screens/Contact';
 import Login from './screens/Login';
 import Signup from './screens/Signup';
+import Dashboard from './screens/Dashboard';
 
 export default function AppRoutes() {
   return (
@@ -20,6 +21,7 @@ export default function AppRoutes() {
       <Routes>
         <Route path="/" element={<HomeScreen />} />
         <Route path="/tax" element={<TaxConsulting />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/accounting" element={<Accounting />} />
         <Route path="/registration" element={<BusinessRegistration />} />
         <Route path="/reporting" element={<FinancialReporting />} />
